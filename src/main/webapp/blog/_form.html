@@ -1,0 +1,16 @@
+<fieldset class="solid">
+	<legend>创建Blog</legend>
+	<input type="hidden" name="blog.blogId" value="#(blog.blogId??)" />
+	<div>
+		<label>标题</label>
+		<input type="text" name="blog.blogTitle" value="#(blog.blogTitle??)" />#(titleMsg)
+	</div>
+	<div>
+		<label>内容</label>
+		<textarea name="blog.blogText" cols="80" rows="10">#(blog.blogText??)</textarea>#(contentMsg)
+	</div>
+	<div>
+		<label>&nbsp;</label>
+		<input value="提交" type="submit">
+	</div>
+</fieldset>
